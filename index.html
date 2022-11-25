@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta  name=”viewport” content=”width=device-width,initial-scale=1.0″>
+<title>firebase課題</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--  チャット表示画面 -->
+
+<div class="chat_wrapper">
+    <div id="title">1000回やりとりすれば1センチは近づく</div>
+    <div id="chat_area">
+        <!-- テスト chat -->
+        <ul id="chat-ul"></ul>
+        <!-- テストここまで -->
+
+        <!-- チャット内容を追加 -->
+        <div id="output"></div>
+        <img id="upimage">
+    </div>
+    <div class="input_wrapper">
+        <!-- テキスト入力欄 -->
+        <input type="text" id="text" cols="30" rows="10">
+        <!-- ボタンたち -->
+        <div class="btn">
+            <!-- ファイル選択ボタン -->
+            <label >
+               <div id="selectfile"><img class="file" src="/img/file.png" alt="ファイル"></div>
+               <input type="file" id="file">
+            </label>
+            <!-- 送信ボタン -->
+            <label>
+                <div id="sendBtn"><img src="/img/send.png" alt="送信" id="send"></div>
+                <input type="button" value="send" id="chat-button">
+            </label>
+        </div>
+        <!-- <button  id="sendbtn">Send</button> -->
+    </div>
+
+</div>
+<!--/ コンテンツ表示画面 -->
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- JQuery -->
+<script type="module" src = "js/simple.js"></script>
+</body>
+</html>

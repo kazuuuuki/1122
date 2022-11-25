@@ -1,0 +1,203 @@
+/* レスポンシブ */
+@media screen and (min-width:480px) {}
+@media screen and (min-width:768px) and (max-width:1024px) {}
+@media screen and (min-width:1024px) {}
+/* レスポンシブここまで */
+
+body{
+    font-size: 20px;
+    background-color: black;
+}
+
+/* チャット */
+
+/** チャットエリア **/
+/*** チャットエリア全体 ***/
+.chat_wrapper{
+    border: solid gray;
+    width: 480px;
+    margin: auto;
+}
+
+/*** チャットタイトル ***/
+#title{
+    background-color:#273245 ;
+    color: white;
+    padding:10px;
+    text-align: center;
+}
+
+/*** チャット部分 ***/
+#chat_area{
+    overflow:scroll;
+    background-color: #7194C3;
+    height:650px;
+    overflow: scroll;
+    height: calc(100vh - 100px);
+
+}
+
+/*** outputのチャット(me) ***/
+.msg{
+    margin: 10px 5px;
+}
+/* .msg:nth-child(2n){
+    font-size: 14px;
+    margin-left: auto;
+    background: #8DE055;
+    color: #273245;
+    padding: 10px;
+    width: 40%;
+    border-radius: 6.5px;
+}
+
+/*** outputのチャット(相手) ***/
+/* .msg:nth-child(odd){
+    width: 40%;
+    color: #273245;
+    background: white;
+    font-size: 14px;
+    border-radius: 6.5px;
+    padding: 10px;
+
+
+}  */
+
+/*** input内容 ***/
+#output{
+    color:white;
+}
+/** チャットエリアここまで **/
+
+/** inputエリア **/
+/*** inputエリア全体 ***/
+.input_wrapper{
+    background-color: aliceblue;
+    padding:10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*** text入力 ***/
+#text{
+    height: 25px;
+    width: 80%;
+    border-width: 2.5px;
+    border-radius: 6.5px;
+
+}
+
+/*** ボタンエリア ***/
+.btn{
+    width: 20%;
+    margin: 0 5px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    
+}
+
+/*** ファイル添付 ***/
+#file{
+    height: 28px;
+    cursor: pointer;
+}
+
+#selectfile{
+    cursor: pointer;
+    /* background:url(/img/file.png); */
+    display: inline-block;
+}
+
+.file{
+    height: 30px;
+
+}
+
+input[type="file"]{
+    display:none;
+}
+input[type="button"]{
+    display: none;
+}
+
+/*** テキスト送信 ***/
+#send{
+    cursor: pointer;
+    height: 30px;
+}
+
+#chat-button{
+    /* display: none; */
+}
+
+/* #sendbtn{
+    cursor: pointer;
+    height:30px;
+    width: 24%;
+    background: #8873FF;
+    color:white;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 6.5px;
+} */
+
+
+
+
+/* inputエリアここまで */
+
+/* チャットここまで */
+
+
+
+/* ///////
+//////////
+チャットbot 
+//////////
+*/
+
+/* 自分の吹き出し */
+.chat-right{
+    background:#8DE055;
+    word-wrap: break-word;
+}
+
+/*相手の吹き出し*/
+.wrap{
+    display: flex;
+}
+.chat-left{
+    background: #FFF;
+    word-wrap: break-word;
+}
+
+/* 相手のアイコン */
+.icon{
+    background-image:url(/img/icon.png);
+    width:auto;
+    height: 20px;
+}
+
+.left{
+    text-align: left;
+    width: 40%;
+    color: #273245;
+    background: white;
+    font-size: 14px;
+    border-radius: 6.5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.right{
+    text-align: left;
+    font-size: 14px;
+    margin-left: auto;
+    background: #8DE055;
+    color: #273245;
+    padding: 10px;
+    width: 40%;
+    border-radius: 6.5px;
+    margin-top: 10px;
+}
+
